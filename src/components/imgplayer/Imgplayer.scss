@@ -1,0 +1,64 @@
+.Imglist_body{
+    height: 262px;
+    width: 183px;
+    display: inline-block;
+    position: absolute;
+    top: 197px;
+    z-index: 999;
+    left: -204px;
+    background: #fff;
+    border-radius: 6px 6px 6px 6px;
+    padding: 4px;
+}
+.Imglist_li{
+    border: 1px solid #bdbdbd;
+    list-style-type: none;
+    width: 48px;
+    display: inline-block;
+    margin: 0 2px 2px 2px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    span{
+    	color: #797979;;
+    }
+    &:hover{
+	    cursor: pointer;
+        background-color: #53a5e8;  
+        color: #fff;
+    }
+    &.active{
+        cursor: pointer;
+        background-color: #53a5e8;  
+        color: #fff;
+    }
+}
+.Imglist_title{
+    color: #666;
+    font-size: 15px;
+    margin: 30px 4px;
+}
+.Imglist_button{
+    background-color: #53a5e8;
+    border: oldlace;
+    margin: 10px;
+    color: #fff;
+    display: inline-block;
+    line-height: 28px;
+    width: 78px;
+    font-size: 15px;
+    margin-left: 2px;
+    cursor: pointer;
+    span{
+        background:url(./images/play.png);
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+        margin: 0 6px;
+    }
+}
+.Imglist_ul{
+	overflow-y:scroll;
+    height: 198px;
+    display: inline-block;
+}

@@ -1,0 +1,24 @@
+.tb-container{
+    border: 1px solid #6c97c9;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.tb-th{
+    background-color: #5886bf;
+    color: #fff;
+    font-size: 18px;
+    & th{
+        border-right: 1px solid #6c97c9; font-weight: 100;
+    }
+}
+.tb-tr{
+    border: 1px solid #6c97c9;
+    & td{
+        border: 1px solid #6c97c9;
+    }
+} 
+.tb-tr__active{
+    background-color: #a8d1ef;
+}

@@ -1,0 +1,21 @@
+  .news-top {
+      margin: 7px 0px
+  }
+  
+  .news-top--title {
+      display: table-cell;
+      width: 472px;
+      height: 68px;
+      text-align: center;
+      vertical-align: middle;
+      color: #f09b14;
+      font-size: 18px;
+      padding: 0 100px;
+  }
+  
+  .news-top--summary {
+      text-indent: 2em;
+      background-color: #fff7e3;
+      line-height: 1.5;
+      padding: 10px;
+  }

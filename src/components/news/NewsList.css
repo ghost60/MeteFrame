@@ -1,0 +1,8 @@
+  .news-linkTitle {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0px 16px;      
+  }
+  .news-linkTitle a{
+      	    color: #666;
+  }

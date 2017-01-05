@@ -1,0 +1,38 @@
+.card-body{
+    width: 100%;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+}
+.card-title{
+    background: #1ea0ff;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+.card-title-text{
+    display: inline-block;
+    margin-left: 12px;
+    color: #fff;
+    font-size: 18px;
+}
+.card-title-icon{
+    display: inline-block;
+    margin-left: 16px;
+    img{
+        height: 60%;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+.card-title-more{
+    display: inline-block;
+    float: right;
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        width: auto;
+    }
+}
+.card-content{
+    border-radius: 0 0 6px 6px;
+    background: #fff;
+}

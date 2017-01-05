@@ -1,0 +1,18 @@
+ .news-date {
+     display: table-cell;
+     border: 1px solid darkorange;
+     width: 45px;
+     text-align: center;
+     border-radius: 4px;
+     overflow: hidden
+ }
+ 
+ .news-date--day {
+     background-color: darkorange;
+     color: #fff
+ }
+ 
+ .news-date--month {
+     background-color: #fff;
+     color: darkorange
+ }

@@ -1,0 +1,31 @@
+.footer_div{
+    background: #000;
+    color: #fff;
+    padding-top: 16px;
+    padding-bottom: 0;
+    line-height: 26px;
+}
+.footer_link{
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-bottom: 38px;
+    width: 1092px;
+    margin-left: auto;
+    margin-right: auto;
+	div{
+	    height: 50px;
+	    width: 124px;
+	    display: inline-block;
+	    margin-right: 6px;
+	    margin-left: 6px;
+	}
+}
+.footer_content{
+	width: 1092px;
+    margin-left: auto;
+    margin-right: auto;    
+	p{
+		display: inline-block;
+	}
+}

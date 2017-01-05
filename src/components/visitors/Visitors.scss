@@ -1,0 +1,20 @@
+.visitors-body{
+	float:right;
+	margin-right:50px;
+	position: relative;
+	width:150px;
+	height: 60px;
+	border:1px solid #606060;
+	border-radius:5px;
+	span{
+		position: absolute;
+		top: -1em;
+	    left: 18%;
+        line-height: 2em;
+	    padding: 0 2em;
+        background-color: #000;
+        color: #70AEC7;
+        z-index:0;
+	}
+}
+
