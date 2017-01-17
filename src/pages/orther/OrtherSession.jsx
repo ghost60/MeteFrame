@@ -14,6 +14,7 @@ import * as menudata from '../../pages/menudata/menudata';
 export default class orthersession extends React.Component {
   constructor(props) {
     super(props);
+    debugger
   }
   componentDidMount() { 
   }
@@ -21,6 +22,7 @@ export default class orthersession extends React.Component {
   }
   render() {
     return  <Session lastname={"orther"}>
+              <h1>其他页面</h1>
             </Session>
   }
 };
