@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var glob = require('glob');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-// var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin'); //生成html
 // var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 // var CleanPlugin = require('clean-webpack-plugin');
 var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
@@ -12,8 +12,8 @@ var prod = process.env.NODE_ENV === 'production' ? true : false;
 
 module.exports = {
 	entry: {
-		index: './src/js/index.js',
-		admin: './src/js/admin.js',
+		index: './src/app/index.js',
+		admin: './src/app/admin.js',
 	},
 	output: {
 		path: path.join(__dirname, prod ? "./dist" : "./build"),
@@ -45,9 +45,6 @@ module.exports = {
 			test: /\.js[x]?$/,
 			exclude: /node_modules/,
 			loader: 'babel?presets[]=es2015&presets[]=react'
-		}, {
-			test: /\.html$/,
-			loader: 'html?attrs=img:src img:srcset'
 		}]
 	},
 	babel: {
@@ -78,6 +75,12 @@ module.exports = {
 			name: 'common',
 			minChunks: Infinity
 		}),
+		new HtmlWebpackPlugin({  //根据模板插入css/js等生成最终HTML
+            filename: 'index.html', //生成的html存放路径，相对于 path
+            template: './src/template/index.html', //html模板路径
+            inject: 'body',
+            hash: false,
+        }),
 	]
 };
 // 判断开发环境还是生产环境,添加uglify等插件
