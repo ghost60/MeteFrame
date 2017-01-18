@@ -101,7 +101,8 @@ class GetData extends React.Component {
     return (
       <div>
         <span>{isFetching.toString()}</span>
-        <span>{data.init}</span>        
+        <span>{data.init}</span>
+        <span>{JSON.stringify(data)}</span>        
         <button onClick={ongetDataClick}>请求数据</button>
       </div>
     )

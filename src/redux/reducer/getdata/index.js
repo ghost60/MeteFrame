@@ -8,7 +8,7 @@ export const getdata = (state = defaultlState , action = {}) => {
         case "GET_DATA_START":
             return updateObject(state,{isFetching:true});
         case "GET_DATA_SUCCESS":
-            return updateObject(state,{isFetching:false,data:action.data});;//返回一个新的state
+            return updateObject(state,{isFetching:false,init:'请求成功',data:action.data});;//返回一个新的state
         default:
             return state
     }
